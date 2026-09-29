@@ -48,6 +48,7 @@ Next Activity
 Speech performance and engagement information influence the next practice activity.
 
 🚀 Key Features
+
 👧 Child
 Personalized child profile
 Target sounds and words
@@ -59,12 +60,14 @@ Adaptive Practice
 Speech recording and analysis
 Text-to-speech teaching
 Progress tracking
+
 👨‍👩‍👧 Parent
 Child profile management
 Practice history
 Speech performance
 Engagement information
 Target-word performance
+
 👨‍⚕️ Therapist
 Connected children
 Practice sessions
@@ -73,6 +76,7 @@ Success rate
 Practice duration
 Target performance
 Practice insights
+
 🧠 Adaptive Intelligence
 
 VocalNova maintains a learner state containing information such as:
@@ -119,6 +123,7 @@ Next Activity
 VocalNova uses existing speech-recognition capabilities rather than training a new large speech model from scratch.
 
 🏗️ Architecture
+
 Flutter App
      ↓
 Speech Recording
@@ -134,12 +139,13 @@ Adaptive Engine
 Next Activity
      ↓
 Flutter App
-
-        ↕
-   Firebase / Firestore
-        ↕
+    ↕
+Firebase / Firestore
+    ↕
 Parent & Therapist Dashboards
+
 🛠️ Tech Stack
+
 Technology	Purpose
 Flutter / Dart	Mobile application
 Python	Backend
@@ -148,6 +154,7 @@ Firebase Authentication	User authentication
 Cloud Firestore	Database
 Speech Recognition	Speech analysis
 Flutter TTS	Teaching / audio feedback
+
 📸 Screenshots
 
 Add screenshots to:
@@ -161,8 +168,11 @@ Example:
 ![Speech Result](assets/screenshots/speech-result.png)
 ![Parent Dashboard](assets/screenshots/parent-dashboard.png)
 ![Therapist Dashboard](assets/screenshots/therapist-dashboard.png)
+
 ⚙️ Setup
+
 Requirements
+
 Flutter
 Dart
 Python 3.x
@@ -183,7 +193,9 @@ python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
 For local Android development:
 
 adb reverse tcp:8000 tcp:8000
+
 📁 Project Structure
+
 VocalNova/
 ├── assets/
 │   └── screenshots/
@@ -201,7 +213,9 @@ VocalNova/
 ├── firestore.rules
 ├── .gitignore
 └── README.md
+
 🔮 Future Scope
+
 Advanced pronunciation analysis
 Phoneme-level feedback
 ML-based recommendations
@@ -209,6 +223,7 @@ Multi-language support
 Cloud backend deployment
 Advanced therapist tools
 Larger-scale evaluation and validation
+
 ⚠️ Disclaimer
 
 VocalNova is a working prototype for adaptive speech practice.
