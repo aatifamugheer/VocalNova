@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "435266360030",
+    "project_id": "vocalnova-169b2",
+    "storage_bucket": "vocalnova-169b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435266360030:android:5ebbb821418fd12df0a84f",
+        "android_client_info": {
+          "package_name": "com.example.vocalnova"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJJHzISybAW0ECMyCSmskAti2CLD7-QsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

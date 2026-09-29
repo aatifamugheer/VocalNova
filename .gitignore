@@ -1,5 +1,34 @@
-.venv/
+# Flutter / Dart
 .dart_tool/
-.idea/
+.packages
+.pub/
+.pub-cache/
 build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# IDE
+.idea/
 *.iml
+.vscode/
+
+# Android
+android/.gradle/
+android/.kotlin/
+android/local.properties
+
+# Generated plugin files
+**/GeneratedPluginRegistrant.*
+
+# macOS
+.DS_Store
+
+# Firebase local cache
+.firebase/
+
+# Python
+.venv/
+
+# Local/debug files
+build_error.txt
