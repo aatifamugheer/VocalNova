@@ -98,8 +98,8 @@ Next Practice Activity
 | **Adaptive Learning Engine**       | Personalized activity recommendation                   |
 | **Flutter TTS**                    | Teaching and pronunciation models                      |
 
-App Screenshots
-
+## App Screenshots
+```
 screenshots/
 ├── login.png
 ├── child-home.png
@@ -108,7 +108,7 @@ screenshots/
 ├── child-profile.png
 ├── parent-dashboard.png
 └── therapist-dashboard.png
-
+```
 👥 Collaborators
 
 Aatifa Mugheer — Backend & Adaptive Motivation Engine
