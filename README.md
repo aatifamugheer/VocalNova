@@ -87,6 +87,7 @@ Next Practice Activity
     ↺
 
 🛠️ Tech Stack
+
 | Technology                         | Purpose                                                |
 | ---------------------------------- | ------------------------------------------------------ |
 | **Flutter / Dart**                 | Cross-platform mobile application                      |
@@ -109,6 +110,7 @@ screenshots/
 └── therapist-dashboard.png
 
 👥 Collaborators
+
 Aatifa Mugheer — Backend & Adaptive Motivation Engine
 Khubaib Alam — Flutter / Child-facing Application
 Shivam Gupta — Speech AI / Speech Analysis
