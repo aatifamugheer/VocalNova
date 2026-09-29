@@ -85,3 +85,55 @@ Adaptive Learning Engine
     ↓
 Next Practice Activity
     ↺
+
+🛠️ Tech Stack
+| Technology                         | Purpose                                                |
+| ---------------------------------- | ------------------------------------------------------ |
+| **Flutter / Dart**                 | Cross-platform mobile application                      |
+| **Python / FastAPI**               | Backend and speech-analysis API                        |
+| **Firebase Authentication**        | Parent & therapist authentication                      |
+| **Cloud Firestore**                | Learner profiles, attempts, progress & recommendations |
+| **Speech AI / Speech Recognition** | Speech attempt analysis                                |
+| **Adaptive Learning Engine**       | Personalized activity recommendation                   |
+| **Flutter TTS**                    | Teaching and pronunciation models                      |
+
+App Screenshots
+
+screenshots/
+├── login.png
+├── child-home.png
+├── practice.png
+├── speech-result.png
+├── child-profile.png
+├── parent-dashboard.png
+└── therapist-dashboard.png
+
+👥 Collaborators
+Aatifa Mugheer — Backend & Adaptive Motivation Engine
+Khubaib Alam — Flutter / Child-facing Application
+Shivam Gupta — Speech AI / Speech Analysis
+Vaidic Gupta — UX, Parent/Therapist Dashboard & Presentation
+
+🚀 Project Status
+
+Working Prototype
+
+The prototype demonstrates:
+
+Child profiles
+Personalized practice
+Speech recording and analysis
+Adaptive recommendations
+Learner-state persistence
+Parent dashboard
+Therapist dashboard
+Engagement-aware adaptation
+
+🔮 Future Scope
+
+Larger and more diverse speech datasets
+More robust speech assessment models
+Clinical validation with speech-language professionals
+Advanced personalization using machine learning
+Expanded language support
+Long-term progress analytics
