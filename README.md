@@ -85,7 +85,7 @@ Adaptive Learning Engine
     ↓
 Next Practice Activity
     ↺
---
+```
 ## 🛠️ Tech Stack
 
 | Technology                         | Purpose                                                |
