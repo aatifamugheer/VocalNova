@@ -1,163 +1,223 @@
 # 🎙️ VocalNova
 
-<p align="center">
+### Speak • Practice • Adapt
 
-## Speak • Practice • Adapt
+VocalNova is an adaptive speech-practice application designed to make speech practice more personalized, engaging, and continuous between therapy sessions.
 
-### An Adaptive Speech-Practice Platform for Personalized and Engaging Learning
-
-VocalNova is a child-centered speech-practice application that combines speech analysis, learner history, engagement signals, and adaptive recommendations to personalize what a child practices next.
-
-</p>
-
-<p align="center">
-
-![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-Backend-FFCA28?logo=firebase&logoColor=black)
-![Firestore](https://img.shields.io/badge/Firestore-Database-FFCA28?logo=firebase&logoColor=black)
-![Status](https://img.shields.io/badge/Status-Working%20Prototype-2EA44F)
-
-</p>
+The system combines **speech analysis, learner state, engagement signals, child interests, and adaptive recommendations** to determine what the child should practice next.
 
 ---
 
-# 📖 Table of Contents
+## 🎯 Problem
 
-- [About VocalNova](#-about-vocalnova)
-- [Problem Statement](#-problem-statement)
-- [Our Solution](#-our-solution)
-- [Core Idea](#-core-idea)
-- [Novelty](#-novelty)
-- [Key Features](#-key-features)
-- [How VocalNova Works](#-how-vocalnova-works)
-- [Adaptive Intelligence](#-adaptive-intelligence)
-- [Speech AI](#-speech-ai)
-- [Engagement Intelligence](#-engagement-intelligence)
-- [System Architecture](#-system-architecture)
-- [Technical Workflow](#-technical-workflow)
-- [Technology Stack](#-technology-stack)
-- [Application Modules](#-application-modules)
-- [User Roles](#-user-roles)
-- [Child Experience](#-child-experience)
-- [Parent Dashboard](#-parent-dashboard)
-- [Therapist Dashboard](#-therapist-dashboard)
-- [Screenshots](#-screenshots)
-- [Data Architecture](#-data-architecture)
-- [Authentication](#-authentication)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Flutter Setup](#-flutter-setup)
-- [Backend Setup](#-backend-setup)
-- [Firebase Setup](#-firebase-setup)
-- [Running the Application](#-running-the-application)
-- [Testing](#-testing)
-- [Prototype Demo Flow](#-prototype-demo-flow)
-- [Scalability](#-scalability)
-- [Limitations](#-limitations)
-- [Future Scope](#-future-scope)
-- [Privacy and Security](#-privacy-and-security)
-- [Project Status](#-project-status)
-- [Contributors](#-contributors)
-- [Contribution](#-contribution)
-- [Disclaimer](#-disclaimer)
-- [Acknowledgements](#-acknowledgements)
-- [Final Thought](#-final-thought)
+Children may face challenges during practice between therapy sessions:
 
----
-
-# 🌟 About VocalNova
-
-**VocalNova** is an adaptive speech-practice application designed to make speech practice more personalized, engaging, and continuous between therapy sessions.
-
-Traditional practice can become repetitive when every learner follows the same fixed sequence of exercises.
-
-VocalNova explores a different approach:
-
-> **Instead of giving every child the same practice path, the system uses the learner's recent performance and engagement to help determine what the child should practice next.**
-
-The platform combines:
-
-- Speech analysis
-- Learner state
-- Engagement signals
-- Child interests
-- Target sounds
-- Target words
-- Adaptive teaching
-- Personalized recommendations
-
-into a continuous practice loop.
-
----
-
-# ❗ Problem Statement
-
-Speech practice does not only happen during a therapy session.
-
-Between therapy sessions, children may experience challenges such as:
-
-- Inconsistent home practice
 - Repetitive exercises
+- Inconsistent home practice
 - Limited immediate feedback
-- Difficulty maintaining motivation
-- Limited personalization
-- Lack of continuity between therapy sessions and home practice
+- Low engagement
+- Lack of personalization
+- Limited continuity between therapy sessions
 
-During a professional therapy session, a therapist can:
-
-- Observe the child
-- Listen to pronunciation
-- Identify difficulties
-- Give feedback
-- Change the activity
-- Adjust the difficulty
-
-However, during independent home practice, the same level of continuous adaptation may not be available.
-
-This led to our central question:
+### Our Question
 
 > **How can speech practice adapt to the child instead of making every child follow the same practice path?**
 
 ---
 
-# 💡 Our Solution
+## 💡 Solution
 
-VocalNova creates a continuous adaptive practice loop.
-
-Instead of treating every practice attempt as an isolated event, the system maintains a learner state and uses recent performance and engagement information to influence subsequent practice.
-
-### The core loop
+VocalNova creates an adaptive learning loop:
 
 ```text
-┌─────────────┐
-│    TEACH    │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│    LISTEN   │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│    REPEAT   │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│   ANALYZE   │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│    LEARN    │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│    ADAPT    │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│ NEXT ACTIVITY│
-└──────┬──────┘
-       │
-       └──────────────► Repeat
+Teach
+  ↓
+Listen
+  ↓
+Repeat
+  ↓
+Analyze
+  ↓
+Update Learner State
+  ↓
+Adapt
+  ↓
+Next Activity
+  ↺
+
+Speech performance and engagement information influence the next practice activity.
+
+🚀 Key Features
+👧 Child
+Personalized child profile
+Target sounds and words
+Interest-based activities
+Sound Adventure
+Word Explorer
+Picture Quest
+Adaptive Practice
+Speech recording and analysis
+Text-to-speech teaching
+Progress tracking
+👨‍👩‍👧 Parent
+Child profile management
+Practice history
+Speech performance
+Engagement information
+Target-word performance
+👨‍⚕️ Therapist
+Connected children
+Practice sessions
+Speech attempts
+Success rate
+Practice duration
+Target performance
+Practice insights
+🧠 Adaptive Intelligence
+
+VocalNova maintains a learner state containing information such as:
+
+Recent scores
+Average performance
+Attempts
+Successful attempts
+Difficulty
+Performance trend
+Engagement
+Target sounds and words
+
+The system can adapt teaching between:
+
+Full Model
+    ↓
+Guided Practice
+    ↓
+Independent Practice
+    ↓
+Phrase Practice
+
+The current adaptive engine is a lightweight personalization/recommendation system, not a newly trained clinical deep-learning model.
+
+🤖 Speech AI
+
+The speech pipeline follows:
+
+Child Speech
+     ↓
+Audio Recording
+     ↓
+Speech Analysis
+     ↓
+Speech Score
+     ↓
+Feedback
+     ↓
+Learner State
+     ↓
+Next Activity
+
+VocalNova uses existing speech-recognition capabilities rather than training a new large speech model from scratch.
+
+🏗️ Architecture
+Flutter App
+     ↓
+Speech Recording
+     ↓
+FastAPI Backend
+     ↓
+Speech Analysis
+     ↓
+Learner State
+     ↓
+Adaptive Engine
+     ↓
+Next Activity
+     ↓
+Flutter App
+
+        ↕
+   Firebase / Firestore
+        ↕
+Parent & Therapist Dashboards
+🛠️ Tech Stack
+Technology	Purpose
+Flutter / Dart	Mobile application
+Python	Backend
+FastAPI	REST API
+Firebase Authentication	User authentication
+Cloud Firestore	Database
+Speech Recognition	Speech analysis
+Flutter TTS	Teaching / audio feedback
+📸 Screenshots
+
+Add screenshots to:
+
+assets/screenshots/
+
+Example:
+
+![Child Home](assets/screenshots/child-home.png)
+![Practice](assets/screenshots/practice.png)
+![Speech Result](assets/screenshots/speech-result.png)
+![Parent Dashboard](assets/screenshots/parent-dashboard.png)
+![Therapist Dashboard](assets/screenshots/therapist-dashboard.png)
+⚙️ Setup
+Requirements
+Flutter
+Dart
+Python 3.x
+Android Studio
+Firebase
+FFmpeg where required by the speech pipeline
+Clone
+git clone https://github.com/YOUR-USERNAME/VocalNova.git
+cd VocalNova
+Flutter
+flutter pub get
+flutter analyze
+flutter test
+flutter run
+Backend
+python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
+
+For local Android development:
+
+adb reverse tcp:8000 tcp:8000
+📁 Project Structure
+VocalNova/
+├── assets/
+│   └── screenshots/
+├── android/
+├── ios/
+├── lib/
+│   ├── models/
+│   ├── screens/
+│   ├── services/
+│   └── widgets/
+├── backend/
+├── test/
+├── pubspec.yaml
+├── firebase.json
+├── firestore.rules
+├── .gitignore
+└── README.md
+🔮 Future Scope
+Advanced pronunciation analysis
+Phoneme-level feedback
+ML-based recommendations
+Multi-language support
+Cloud backend deployment
+Advanced therapist tools
+Larger-scale evaluation and validation
+⚠️ Disclaimer
+
+VocalNova is a working prototype for adaptive speech practice.
+
+It is not a medical device, diagnostic system, or replacement for a licensed speech-language pathologist. The current speech analysis, engagement scoring, and adaptive recommendations have not been clinically validated.
+
+👥 Team
+Member	Responsibility
+Aatifa Mugheer	Backend & Adaptive Motivation Engine
+Khubaib Alam	Flutter / Child Application
+Shivam Gupta	Speech / AI
+Vaidic Gupta	UX, Dashboards & Presentation
